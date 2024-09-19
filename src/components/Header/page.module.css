@@ -1,0 +1,126 @@
+.header_container {
+    width: Hug (1, 328px)px;
+    height: Hug (60px)px;
+    top: 24px;
+    left: 56px;
+    padding: 0px 0px 24px 0px;
+    gap: 8px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+    border-bottom: 1px solid #D7DDE9;
+    display: flex;
+    justify-content: center;
+    margin: 24px ;
+}
+
+.header_elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1328px;
+    height: 36px;
+    gap: 0px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+}
+
+.logo_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    padding: 1.5px 0.25px 1.5px 0px;
+    gap: 22px;
+    opacity: 0px;
+}
+
+.logo_img {
+    position: absolute;
+    width: 33.17px;
+    height: 33px;
+    top: 1.5px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.logo_text {
+    position: absolute;
+    width: 106.14px;
+    height: 15.5px;
+    top: 10.21px;
+    left: 43.6px;
+    font-weight: 700;
+    gap: 0px;
+    opacity: 0px;
+    color: #101828;
+}
+
+.title {
+    width: 284px;
+    height: 29px;
+    top: 3px;
+    left: 522px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.04px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.date_text {
+    width: 231px;
+    height: 19px;
+    top: 8px;
+    left: 1094px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #0000008A;
+}
+
+@media (max-width: 800px) {
+    .header_container {
+        width: Fixed (272px)px;
+        height: Hug (114px)px;
+        top: 24px;
+        left: 24px;
+        padding: 0px 0px 24px 0px;
+ 
+        border: 0px 0px 1px 0px;
+        opacity: 0px;
+        border-bottom: 1px solid #D7DDE9;
+    }
+
+    .header_elements {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        /* justify-content: flex-start;*/
+        width: 272px;
+        height: 90px;
+        padding: 0px 41px 0px 0px;
+        gap: 0px;
+        border: 0px 0px 1px 0px;
+        opacity: 0px;
+    }
+
+    .title {
+        width: 189px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+}
