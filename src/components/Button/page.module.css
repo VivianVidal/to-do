@@ -1,0 +1,37 @@
+.button_container {
+    width: 450px;
+    height: 51px;
+    top: 594px;
+    left: 495px;
+    padding: 16px 24px;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    opacity: 0px;
+    background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+    cursor: pointer;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+@media (max-width: 700px) {
+
+    .button_container {
+        width: 272px;
+        height: 51px;
+        top: 614px;
+        left: 24px;
+        padding: 16px 24px ;
+        gap: 8px;
+        border-radius: 8px;
+        opacity: 0px;
+    }
+
+}
