@@ -10,7 +10,6 @@ interface ModalAddTaskProps {
 
 export default function ModalAddTask({ onClose, onAddTask }: ModalAddTaskProps) {
     const [taskTitle, setTaskTitle] = useState('');
-    console.log(taskTitle);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
