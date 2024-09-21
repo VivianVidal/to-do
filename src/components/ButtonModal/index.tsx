@@ -4,13 +4,10 @@ import style from "./page.module.css";
 
 interface ButtonProps {
   label: 'Adicionar' | 'Cancelar' | 'Deletar'; 
+  click: () => void;
 }
 
-export default function ButtonModal({ label }: ButtonProps) {
-
-  function handleClick() {
-    console.log('Clicou no botão:', label);
-  }
+export default function ButtonModal({ label, click }: ButtonProps) {
 
   const buttonClass =
     label === 'Adicionar' ? style.button_add_container : 
@@ -18,7 +15,7 @@ export default function ButtonModal({ label }: ButtonProps) {
     label === 'Deletar' ? style.button_del_container : '';
 
   return (
-    <button onClick={handleClick} className={`${style.group} ${buttonClass}`}>
+    <button onClick={click} className={`${style.group} ${buttonClass}`}>
       <span className={style.text}>{label}</span>
     </button>
   );
