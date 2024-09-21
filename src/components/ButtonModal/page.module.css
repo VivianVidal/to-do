@@ -30,7 +30,6 @@
     text-align: left;
     color: #FFFFFF;
 }
-
 .group{
     padding: 16px 24px;
     gap: 8px;
@@ -39,22 +38,8 @@
     border: none;
 }
 
-
-
 @media (max-width: 700px) {
-    .button_add_container {
-        width: 272px;
-        height: 51px;
-        top: 614px;
-        left: 24px;
-    }
-
-    .button_cancel_container {
-        width: 272px;
-        height: 51px;
-    }
-
-    .button_del_container {
+    .group {
         width: 272px;
         height: 51px;
     }
