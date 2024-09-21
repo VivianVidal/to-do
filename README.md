@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Objetivo
 
-## Getting Started
+Este projeto foi desenvolvido como parte do processo seletivo para uma vaga de desenvolvedor Junior na LegaPlan. 
+Trata-se de uma aplicação simples de gerenciamento de tarefas, onde o usuário pode adicionar, marcar como concluída e deletar tarefas.
 
-First, run the development server:
+- Link do deploy: [Clique Aqui](https://task-todo-app-list.netlify.app/)
+
+# Funcionalidades
+
+- Adicionar tarefas: O usuário pode criar novas tarefas através de um modal.
+- Marcar tarefas como concluídas: Tarefas não concluídas podem ser marcadas como concluídas ao clicar no checkbox.
+- Deletar tarefas: O usuário pode deletar qualquer tarefa, não importa se ela está concluída ou não, por meio de um botão que abre um modal de confirmação.
+- Persistência com LocalStorage: As tarefas são armazenadas no localStorage para que não sejam perdidas após o recarregamento da página.
+
+  # Tecnologias Utilizadas
+- Next.js: Framework utilizado para o desenvolvimento da interface e renderização do lado do servidor.
+- React.js: Biblioteca para construção de interfaces dinâmicas.
+- TypeScript: Utilizado para garantir tipagem estática e segurança durante o desenvolvimento.
+- CSS Modules: Utilizado para o estilo modularizado dos componentes.
+- UUID: Biblioteca para gerar IDs únicos para as tarefas.
+- LocalStorage: Utilizado para armazenamento de tarefas no navegador, garantindo persistência entre recarregamentos de página.
+
+# Como executar o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/VivianVidal/to-do.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm i uuidv4
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm run dev
+```
 
-## Learn More
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-To learn more about Next.js, take a look at the following resources:
+# Layout 
+![image](https://github.com/user-attachments/assets/b05c9e17-e44a-491c-9233-b159f084f039)
+![image](https://github.com/user-attachments/assets/0f02367d-8d8d-40d1-93ab-a0adc312f807) ![image](https://github.com/user-attachments/assets/40701e6c-3d01-4b10-b2b4-8ddf6fd7f116) ![image](https://github.com/user-attachments/assets/9e564316-16ef-420b-b41b-ace4afb612e1)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
