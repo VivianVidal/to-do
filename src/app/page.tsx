@@ -9,20 +9,19 @@ import { v4 as uuidv4 } from "uuid";
 import { Task } from "@/utils/util";
 
 
-const getTasksFromLocalStorage = (): Task[] => {
-  if (typeof window !== "undefined") {
-    const savedTasks = localStorage.getItem("tasks");
-    return savedTasks ? JSON.parse(savedTasks) : [];
-  }
-  return [];
-};
-
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]); 
   const [showAddModal, setShowAddModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [taskToDelete, setTaskToDelete] = useState<string | null>(null);
 
+  const getTasksFromLocalStorage = (): Task[] => {
+    if (typeof window !== "undefined") {
+      const savedTasks = localStorage.getItem("tasks");
+      return savedTasks ? JSON.parse(savedTasks) : [];
+    }
+    return [];
+  };
 
   useEffect(() => {
     const storedTasks = getTasksFromLocalStorage();
