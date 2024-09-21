@@ -1,9 +1,11 @@
+list task style
 .section_container {
-    width: 450px;
-    height: 446px;
+    min-width: 450px;
+    min-height: 446px;
     padding: 32px;
     border-radius: 16px;
     border: 1px solid #EAECF0;
+    margin-bottom: 24px;
     box-shadow: 0px 1px 2px 0px #1018280D;
 }
 
@@ -30,7 +32,6 @@
     letter-spacing: -0.02em;
     text-align: left;
     color: #0000008A;
-    width: 134px;
     height: 19px;
 }
 
@@ -101,4 +102,16 @@
     opacity: 0px;
     border: none;
     background-color: transparent;
+}
+
+@media (max-width:700px) {
+    .section_container {
+        min-width: 272px;
+        min-height: 428px;
+    }
+
+    .item {
+        width: 208px;
+        height: 56px;
+    }
 }
