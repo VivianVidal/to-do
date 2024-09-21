@@ -23,7 +23,7 @@ export default function ModalAddTask({ onClose, onAddTask }: ModalAddTaskProps) 
         <div className={style.modal_overlay}>
             <div className={style.modal}>
                 <h2>Nova tarefa</h2>
-                <form className={style.container_form} onSubmit={handleSubmit}>
+                <form className={style.container_form} id='task' onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="task">Título</label>
                         <input

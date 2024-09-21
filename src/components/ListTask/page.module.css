@@ -1,4 +1,4 @@
-list task style
+
 .section_container {
     min-width: 450px;
     min-height: 446px;
@@ -43,7 +43,6 @@ list task style
     gap: 16px;
     border-radius: 8px;
     border: 1px dashed #D7DDE9;
-    opacity: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,8 +97,6 @@ list task style
     top: 16px;
     left: 346px;
     padding: 2px 3px;
-    gap: 0px;
-    opacity: 0px;
     border: none;
     background-color: transparent;
 }
